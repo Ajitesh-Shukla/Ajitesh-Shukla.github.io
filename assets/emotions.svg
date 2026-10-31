@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffe3ec"/>
+      <stop offset="1" stop-color="#e3ecff"/>
+    </linearGradient>
+    <radialGradient id="face" cx=".4" cy=".35" r=".75">
+      <stop offset="0" stop-color="#ffe46b"/>
+      <stop offset=".7" stop-color="#ffc93c"/>
+      <stop offset="1" stop-color="#f5a623"/>
+    </radialGradient>
+    <linearGradient id="tear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd3ff"/>
+      <stop offset="1" stop-color="#3a9bf0"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#5a3a00" flood-opacity=".22"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <g fill="#fff" opacity=".55">
+    <circle cx="70" cy="60" r="6"/><circle cx="540" cy="80" r="8"/><circle cx="520" cy="340" r="5"/>
+    <circle cx="90" cy="330" r="7"/><circle cx="300" cy="40" r="4"/><circle cx="300" cy="370" r="5"/>
+  </g>
+
+  <!-- Laughing (tears of joy) -->
+  <g transform="translate(130 215) rotate(-10)" filter="url(#sh)">
+    <circle r="88" fill="url(#face)"/>
+    <path d="M-52 -22 q16 -20 32 0" fill="none" stroke="#5b3a12" stroke-width="9" stroke-linecap="round"/>
+    <path d="M20 -22 q16 -20 32 0" fill="none" stroke="#5b3a12" stroke-width="9" stroke-linecap="round"/>
+    <path d="M-56 12 h112 q0 58 -56 58 q-56 0 -56 -58z" fill="#5b3a12"/>
+    <path d="M-44 14 h88 q-2 14 -8 20 h-72 q-6 -6 -8 -20z" fill="#fff"/>
+    <path d="M-30 58 q30 -18 60 0 q-14 12 -30 12 q-16 0 -30 -12z" fill="#ff6b81"/>
+    <path d="M-70 -8 q-26 18 -20 44 q14 6 22 -10 q6 -16 -2 -34z" fill="url(#tear)"/>
+    <path d="M70 -8 q26 18 20 44 q-14 6 -22 -10 q-6 -16 2 -34z" fill="url(#tear)"/>
+  </g>
+
+  <!-- Smiling -->
+  <g transform="translate(300 175)" filter="url(#sh)">
+    <circle r="96" fill="url(#face)"/>
+    <ellipse cx="-32" cy="-22" rx="11" ry="17" fill="#5b3a12"/>
+    <ellipse cx="32" cy="-22" rx="11" ry="17" fill="#5b3a12"/>
+    <path d="M-50 22 q50 48 100 0" fill="none" stroke="#5b3a12" stroke-width="10" stroke-linecap="round"/>
+    <ellipse cx="-58" cy="20" rx="16" ry="9" fill="#ff8a8a" opacity=".55"/>
+    <ellipse cx="58" cy="20" rx="16" ry="9" fill="#ff8a8a" opacity=".55"/>
+  </g>
+
+  <!-- Sad -->
+  <g transform="translate(470 225) rotate(10)" filter="url(#sh)">
+    <circle r="84" fill="url(#face)"/>
+    <path d="M-50 -40 l26 -10" stroke="#5b3a12" stroke-width="7" stroke-linecap="round"/>
+    <path d="M50 -40 l-26 -10" stroke="#5b3a12" stroke-width="7" stroke-linecap="round"/>
+    <ellipse cx="-30" cy="-14" rx="10" ry="14" fill="#5b3a12"/>
+    <ellipse cx="30" cy="-14" rx="10" ry="14" fill="#5b3a12"/>
+    <path d="M-36 44 q36 -32 72 0" fill="none" stroke="#5b3a12" stroke-width="9" stroke-linecap="round"/>
+    <path d="M-34 4 q-12 22 -6 34 q10 8 18 -4 q4 -14 -12 -30z" fill="url(#tear)"/>
+  </g>
+</svg>
